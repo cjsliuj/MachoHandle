@@ -107,7 +107,7 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
         }else if(fatArch.fatArch64 != nil){
             mach_header_offset = fatArch.fatArch64 -> offset;
         }else{
-            NSAssert(false, @"fatArch 为空");
+            NSAssert(false, @"fatArch is nil");
         }
     }
     MachHeader * machHeaderObj = [[MachHeader alloc]init];
@@ -197,13 +197,9 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
         dylibcmd.offset = cmd.offset;
         dylibcmd.dylibCmd = dylib;
         [rs addObject:dylibcmd];
-        
     }
     return rs;
 }
-
-
-
 
 //MARK: - ------ Private ------
 - (void) _addLink:(NSString *)link inFatArch:(nullable FatArch *)arch{
@@ -256,12 +252,11 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
     if (!toDelDc) {
         return;
     }
-//    NSAssert(toDelDc, @"未找到匹配的 link");
     MachHeader * machHeader = [self getMachHeaderInFatArch:arch];
     long headerOffset = machHeader.offset;
     long headerSize = 0;
     long originNcmdSize = 0;
-    //修改 mach header
+    //change mach header
     if(machHeader.machHeader){
         originNcmdSize = machHeader.machHeader->sizeofcmds;
         headerSize = sizeof(struct mach_header);
@@ -278,14 +273,15 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
         [_machoFileHandle writeData: [NSData dataWithBytes:machHeader.machHeader64 length:sizeof(struct mach_header_64)]];
     }
     
-    //插入冗余
+    /*
+     Through the insert and delete operation, as if using 0 replace dylib_command bytes.
+     */
     int n = toDelDc.dylibCmd->cmdsize;
     uint8 *arr;
     arr = (uint8*)malloc(sizeof(uint8)*n);
     for (int i = 0; i < n; i++)
         arr[i] = 0;
     insert(_machoPath,[NSData dataWithBytes:arr length:n], headerOffset + headerSize + originNcmdSize);
-    //删除dylib cmd
     delete(_machoPath, toDelDc.offset, toDelDc.dylibCmd->cmdsize);
 }
 
@@ -301,7 +297,7 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
         ncmds = machHeader.machHeader64->ncmds;
         load_commands_offset = machHeader.offset + sizeof(struct mach_header_64);
     }else{
-        NSAssert(false, @"machHeader 为空");
+        NSAssert(false, @"nil machHeader");
     }
     uint32_t magic = [self _readMagicWithOffset:machHeader.offset];
     int shouldSwap = [MachoHandle _shouldSwapBytesOfMagic:magic];

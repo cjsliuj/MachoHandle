@@ -38,14 +38,17 @@ void removeDylibLink(MachoHandle * machoHandler, NSString * link){
 }
 
 int main(int argc, const char * argv[]) {
-    NSString * binaryPath = @"/Users/jerry/Desktop/TTT";//set a mach-o file path
+    NSString * binaryPath = @"set a mach-o file path here";
     MachoHandle * machoHandler = [[MachoHandle alloc]initWithMachoPath:binaryPath];
-    NSLog(@"原始的");
+    NSLog(@"original");
+    //print shared libraries used (like command 'otool -L')
     listLinkedDylibs(machoHandler);
+    //add a dylib link
     addDylibLink(machoHandler, @"@executable_path/aaaa");
     addDylibLink(machoHandler, @"@executable_path/bbbb");
+    //remove dylib link
     removeDylibLink(machoHandler, @"@executable_path/aaaa");
-    NSLog(@"编辑后的");
+    NSLog(@"after edit");
     listLinkedDylibs(machoHandler);
     return 0;
 }

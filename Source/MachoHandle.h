@@ -12,11 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MachoHandle : NSObject
 - (instancetype) initWithMachoPath:(NSString *)machoPath;
 //MARK: - arch
-///如果binary是个thin版本则该方法会返回一个空数组。
+/**
+ If the structures of binary's format is 'thin', this method will return a empty array.
+ */
 - (NSArray<FatArch*> *) getFatArchs;
 
 //MARK: - machheader
-///如果binary是个thin版本，则fatArch传nil。
+
+/**
+ If the structures of binary's format is 'thin', you should set nil to the fatArch parameter.
+ */
 - (MachHeader * ) getMachHeaderInFatArch:(nullable FatArch *)fatArch;
 
 //MARK: - dylib link
@@ -27,17 +32,23 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getLinkNameForDylibCmd:(DylibCommand * )dylibCmd;
 
 //MARK: - load command
-///如果binary是个thin版本，则fatArch传nil。
+/**
+ If the structures of binary's format is 'thin', you should set nil to the fatArch parameter.
+ */
 - (NSArray<LoadCommand *> *) getAllLoadCommandsInFatArch:(nullable FatArch *)fatArch;
 
 /**
- loadCommandType 参考：mach-o/loader.h
- 如果binary是个thin版本，则fatArch传nil。
- */
+If the structures of binary's format is 'thin', you should set nil to the fatArch parameter.
+
+loadCommandType Reference: mach-o/loader.h
+
+*/
 - (NSArray<LoadCommand *> *) getLoadCommandsInFatArch:(nullable FatArch *)fatArch
                                       loadCommandType:(int)loadCommandType;
 
-///如果binary是个thin版本，则fatArch传nil。
+/**
+ If the structures of binary's format is 'thin', you should set nil to the fatArch parameter.
+ */
 - (NSArray<DylibCommand *> *) getDylibCommandInFatArch:(nullable FatArch *)fatArch;
 
 @end
