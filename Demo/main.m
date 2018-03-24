@@ -38,7 +38,7 @@ void removeDylibLink(MachoHandle * machoHandler, NSString * link){
 }
 
 int main(int argc, const char * argv[]) {
-    NSString * binaryPath = @"/Users/jerry/Desktop/TTT";//mach-o file path
+    NSString * binaryPath = @"/Users/jerry/Desktop/TTT";//set a mach-o file path
     MachoHandle * machoHandler = [[MachoHandle alloc]initWithMachoPath:binaryPath];
     NSLog(@"原始的");
     listLinkedDylibs(machoHandler);

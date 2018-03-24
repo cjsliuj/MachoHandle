@@ -44,11 +44,17 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
 }
 //MARK: - ------ Public ------
 - (instancetype) initWithMachoPath:(NSString *)machoPath{
+    NSAssert([[NSFileManager defaultManager] fileExistsAtPath:machoPath],
+             [@"file not exists at: " stringByAppendingString:machoPath]);
     self = [super init];
     if (self) {
         _machoFileHandle = [NSFileHandle fileHandleForUpdatingAtPath:machoPath];
         _machoPath = machoPath;
     }
+    uint32_t magic = [self _readMagicWithOffset:0];
+    NSAssert([MachoHandle _isValidMachoOfMagic:magic],
+             [machoPath stringByAppendingString:@" is a illegal macho file"]);
+    
     return self;
 }
 //MARK: - arch
@@ -317,7 +323,7 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
 }
 
 //MARK: - magic
--(uint32_t) _readMagicWithOffset:(uint64_t)offset {
+- (uint32_t) _readMagicWithOffset:(uint64_t)offset {
     uint32_t magic;
     uint32_t * t = loadBytes(_machoFileHandle, offset, sizeof(uint32_t));
     magic = *t;
@@ -332,7 +338,9 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
 + (BOOL) _shouldSwapBytesOfMagic:(long)magic {
     return magic == MH_CIGAM || magic == MH_CIGAM_64 || magic == FAT_CIGAM;
 }
-
++ (BOOL) _isValidMachoOfMagic:(long)magic{
+    return magic == FAT_MAGIC || magic == FAT_CIGAM || magic == MH_MAGIC_64 || magic == MH_CIGAM_64;
+}
 - (void)dealloc{
     [_machoFileHandle closeFile];
 }
