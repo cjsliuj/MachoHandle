@@ -18,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray<FatArch*> *) getFatArchs;
 
 //MARK: - machheader
-
 /**
  If the structures of binary's format is 'thin', you should set nil to the fatArch parameter.
  */
@@ -39,9 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
 If the structures of binary's format is 'thin', you should set nil to the fatArch parameter.
-
 loadCommandType Reference: mach-o/loader.h
-
 */
 - (NSArray<LoadCommand *> *) getLoadCommandsInFatArch:(nullable FatArch *)fatArch
                                       loadCommandType:(int)loadCommandType;
