@@ -7,13 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C41754262066AE9C002210D5 /* MachoHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C41754242066AE9C002210D5 /* MachoHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C41754302066AEC4002210D5 /* MachoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C417542C2066AEC4002210D5 /* MachoModel.m */; };
+		C41754312066AEC4002210D5 /* MachoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C417542D2066AEC4002210D5 /* MachoModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C41754322066AEC4002210D5 /* MachoHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C417542E2066AEC4002210D5 /* MachoHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C41754332066AEC4002210D5 /* MachoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C417542F2066AEC4002210D5 /* MachoHandle.m */; };
+		C41754422066AF09002210D5 /* MachoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C417542F2066AEC4002210D5 /* MachoHandle.m */; };
+		C41754442066AF09002210D5 /* MachoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C417542C2066AEC4002210D5 /* MachoModel.m */; };
+		C41754452066AF13002210D5 /* MachoHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C417542E2066AEC4002210D5 /* MachoHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C41754462066AF13002210D5 /* MachoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C417542D2066AEC4002210D5 /* MachoModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C417544E2066AF30002210D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C417544D2066AF30002210D5 /* main.m */; };
+		C41754552066AF7D002210D5 /* MachoHandle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41754392066AEFA002210D5 /* MachoHandle.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C41754522066AF78002210D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C41754182066AE9C002210D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C41754382066AEFA002210D5;
+			remoteInfo = "MachoHandle-static";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C41754492066AF30002210D5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C41754212066AE9C002210D5 /* MachoHandle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MachoHandle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C41754242066AE9C002210D5 /* MachoHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachoHandle.h; sourceTree = "<group>"; };
 		C41754252066AE9C002210D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C417542C2066AEC4002210D5 /* MachoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachoModel.m; sourceTree = "<group>"; };
+		C417542D2066AEC4002210D5 /* MachoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachoModel.h; sourceTree = "<group>"; };
+		C417542E2066AEC4002210D5 /* MachoHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachoHandle.h; sourceTree = "<group>"; };
+		C417542F2066AEC4002210D5 /* MachoHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachoHandle.m; sourceTree = "<group>"; };
+		C41754392066AEFA002210D5 /* MachoHandle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MachoHandle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C417544B2066AF30002210D5 /* Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		C417544D2066AF30002210D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,14 +61,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C41754352066AEFA002210D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41754482066AF30002210D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41754552066AF7D002210D5 /* MachoHandle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C41754172066AE9C002210D5 = {
 			isa = PBXGroup;
 			children = (
-				C41754232066AE9C002210D5 /* MachoHandle */,
+				C41754232066AE9C002210D5 /* Source */,
+				C417544C2066AF30002210D5 /* Demo */,
 				C41754222066AE9C002210D5 /* Products */,
+				C41754542066AF7D002210D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,17 +93,37 @@
 			isa = PBXGroup;
 			children = (
 				C41754212066AE9C002210D5 /* MachoHandle.framework */,
+				C41754392066AEFA002210D5 /* MachoHandle.framework */,
+				C417544B2066AF30002210D5 /* Demo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C41754232066AE9C002210D5 /* MachoHandle */ = {
+		C41754232066AE9C002210D5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C41754242066AE9C002210D5 /* MachoHandle.h */,
+				C417542E2066AEC4002210D5 /* MachoHandle.h */,
+				C417542F2066AEC4002210D5 /* MachoHandle.m */,
+				C417542D2066AEC4002210D5 /* MachoModel.h */,
+				C417542C2066AEC4002210D5 /* MachoModel.m */,
 				C41754252066AE9C002210D5 /* Info.plist */,
 			);
-			path = MachoHandle;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C417544C2066AF30002210D5 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C417544D2066AF30002210D5 /* main.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		C41754542066AF7D002210D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,16 +133,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41754262066AE9C002210D5 /* MachoHandle.h in Headers */,
+				C41754312066AEC4002210D5 /* MachoModel.h in Headers */,
+				C41754322066AEC4002210D5 /* MachoHandle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41754362066AEFA002210D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41754452066AF13002210D5 /* MachoHandle.h in Headers */,
+				C41754462066AF13002210D5 /* MachoModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C41754202066AE9C002210D5 /* MachoHandle */ = {
+		C41754202066AE9C002210D5 /* MachoHandle-dynamic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C41754292066AE9C002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle" */;
+			buildConfigurationList = C41754292066AE9C002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle-dynamic" */;
 			buildPhases = (
 				C417541C2066AE9C002210D5 /* Sources */,
 				C417541D2066AE9C002210D5 /* Frameworks */,
@@ -79,10 +163,46 @@
 			);
 			dependencies = (
 			);
-			name = MachoHandle;
+			name = "MachoHandle-dynamic";
 			productName = MachoHandle;
 			productReference = C41754212066AE9C002210D5 /* MachoHandle.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		C41754382066AEFA002210D5 /* MachoHandle-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C417543E2066AEFA002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle-static" */;
+			buildPhases = (
+				C41754342066AEFA002210D5 /* Sources */,
+				C41754352066AEFA002210D5 /* Frameworks */,
+				C41754362066AEFA002210D5 /* Headers */,
+				C41754372066AEFA002210D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MachoHandle-static";
+			productName = "MachoHandle-static";
+			productReference = C41754392066AEFA002210D5 /* MachoHandle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C417544A2066AF30002210D5 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C417544F2066AF30002210D5 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				C41754472066AF30002210D5 /* Sources */,
+				C41754482066AF30002210D5 /* Frameworks */,
+				C41754492066AF30002210D5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C41754532066AF78002210D5 /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = C417544B2066AF30002210D5 /* Demo */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +214,14 @@
 				ORGANIZATIONNAME = com.sz.jerry;
 				TargetAttributes = {
 					C41754202066AE9C002210D5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					C41754382066AEFA002210D5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					C417544A2066AF30002210D5 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,13 +239,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C41754202066AE9C002210D5 /* MachoHandle */,
+				C41754202066AE9C002210D5 /* MachoHandle-dynamic */,
+				C41754382066AEFA002210D5 /* MachoHandle-static */,
+				C417544A2066AF30002210D5 /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C417541F2066AE9C002210D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41754372066AEFA002210D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,10 +268,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C41754332066AEC4002210D5 /* MachoHandle.m in Sources */,
+				C41754302066AEC4002210D5 /* MachoModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41754342066AEFA002210D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41754422066AF09002210D5 /* MachoHandle.m in Sources */,
+				C41754442066AF09002210D5 /* MachoModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41754472066AF30002210D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C417544E2066AF30002210D5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C41754532066AF78002210D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C41754382066AEFA002210D5 /* MachoHandle-static */;
+			targetProxy = C41754522066AF78002210D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C41754272066AE9C002210D5 /* Debug */ = {
@@ -257,11 +421,13 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = MachoHandle/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sz.jerry.MachoHandle;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = MachoHandle;
+				PRODUCT_NAME = MachoHandle;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -277,12 +443,76 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = MachoHandle/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sz.jerry.MachoHandle;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = MachoHandle;
+				PRODUCT_NAME = MachoHandle;
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C417543F2066AEFA002210D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sz.jerry.MachoHandle-static";
+				PRODUCT_MODULE_NAME = MachoHandle;
+				PRODUCT_NAME = MachoHandle;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C41754402066AEFA002210D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sz.jerry.MachoHandle-static";
+				PRODUCT_MODULE_NAME = MachoHandle;
+				PRODUCT_NAME = MachoHandle;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C41754502066AF30002210D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C41754512066AF30002210D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -298,11 +528,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C41754292066AE9C002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle" */ = {
+		C41754292066AE9C002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle-dynamic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C417542A2066AE9C002210D5 /* Debug */,
 				C417542B2066AE9C002210D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C417543E2066AEFA002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C417543F2066AEFA002210D5 /* Debug */,
+				C41754402066AEFA002210D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C417544F2066AF30002210D5 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C41754502066AF30002210D5 /* Debug */,
+				C41754512066AF30002210D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
