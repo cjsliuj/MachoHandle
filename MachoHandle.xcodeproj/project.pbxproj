@@ -7,94 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C41754302066AEC4002210D5 /* MachoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C417542C2066AEC4002210D5 /* MachoModel.m */; };
-		C41754312066AEC4002210D5 /* MachoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C417542D2066AEC4002210D5 /* MachoModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C41754322066AEC4002210D5 /* MachoHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C417542E2066AEC4002210D5 /* MachoHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C41754332066AEC4002210D5 /* MachoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C417542F2066AEC4002210D5 /* MachoHandle.m */; };
-		C41754422066AF09002210D5 /* MachoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C417542F2066AEC4002210D5 /* MachoHandle.m */; };
-		C41754442066AF09002210D5 /* MachoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C417542C2066AEC4002210D5 /* MachoModel.m */; };
-		C41754452066AF13002210D5 /* MachoHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = C417542E2066AEC4002210D5 /* MachoHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C41754462066AF13002210D5 /* MachoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C417542D2066AEC4002210D5 /* MachoModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C417544E2066AF30002210D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C417544D2066AF30002210D5 /* main.m */; };
-		C41754552066AF7D002210D5 /* MachoHandle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41754392066AEFA002210D5 /* MachoHandle.framework */; };
+		C4643EA021B5207F0092273D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4643E9F21B5207F0092273D /* main.m */; };
+		FE029EFA2CC0D3430DAB1ECE /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097012B1B8D43BBE5D1AB415 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C41754522066AF78002210D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C41754182066AE9C002210D5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C41754382066AEFA002210D5;
-			remoteInfo = "MachoHandle-static";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C41754492066AF30002210D5 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		C41754212066AE9C002210D5 /* MachoHandle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MachoHandle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C41754252066AE9C002210D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		097012B1B8D43BBE5D1AB415 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8372E41A629314FC152E8D44 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		C417542C2066AEC4002210D5 /* MachoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachoModel.m; sourceTree = "<group>"; };
 		C417542D2066AEC4002210D5 /* MachoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachoModel.h; sourceTree = "<group>"; };
 		C417542E2066AEC4002210D5 /* MachoHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachoHandle.h; sourceTree = "<group>"; };
 		C417542F2066AEC4002210D5 /* MachoHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachoHandle.m; sourceTree = "<group>"; };
-		C41754392066AEFA002210D5 /* MachoHandle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MachoHandle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C417544B2066AF30002210D5 /* Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Demo; sourceTree = BUILT_PRODUCTS_DIR; };
-		C417544D2066AF30002210D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4643E9421B5207E0092273D /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4643E9E21B5207F0092273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4643E9F21B5207F0092273D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4643EA521B521C70092273D /* MachoHandle.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MachoHandle.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DD0D938883ADA07B5588FD2C /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C417541D2066AE9C002210D5 /* Frameworks */ = {
+		C4643E9121B5207E0092273D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C41754352066AEFA002210D5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C41754482066AF30002210D5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C41754552066AF7D002210D5 /* MachoHandle.framework in Frameworks */,
+				FE029EFA2CC0D3430DAB1ECE /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071F424361BE0514D5E3FAF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8372E41A629314FC152E8D44 /* Pods-Demo.debug.xcconfig */,
+				DD0D938883ADA07B5588FD2C /* Pods-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C41754172066AE9C002210D5 = {
 			isa = PBXGroup;
 			children = (
+				C4643EA521B521C70092273D /* MachoHandle.podspec */,
 				C41754232066AE9C002210D5 /* Source */,
-				C417544C2066AF30002210D5 /* Demo */,
+				C4643E9521B5207E0092273D /* Demo */,
 				C41754222066AE9C002210D5 /* Products */,
 				C41754542066AF7D002210D5 /* Frameworks */,
+				071F424361BE0514D5E3FAF7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		C41754222066AE9C002210D5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C41754212066AE9C002210D5 /* MachoHandle.framework */,
-				C41754392066AEFA002210D5 /* MachoHandle.framework */,
-				C417544B2066AF30002210D5 /* Demo */,
+				C4643E9421B5207E0092273D /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,103 +73,48 @@
 				C417542F2066AEC4002210D5 /* MachoHandle.m */,
 				C417542D2066AEC4002210D5 /* MachoModel.h */,
 				C417542C2066AEC4002210D5 /* MachoModel.m */,
-				C41754252066AE9C002210D5 /* Info.plist */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		C417544C2066AF30002210D5 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				C417544D2066AF30002210D5 /* main.m */,
-			);
-			path = Demo;
 			sourceTree = "<group>";
 		};
 		C41754542066AF7D002210D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				097012B1B8D43BBE5D1AB415 /* Pods_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C4643E9521B5207E0092273D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C4643E9E21B5207F0092273D /* Info.plist */,
+				C4643E9F21B5207F0092273D /* main.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		C417541E2066AE9C002210D5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C41754312066AEC4002210D5 /* MachoModel.h in Headers */,
-				C41754322066AEC4002210D5 /* MachoHandle.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C41754362066AEFA002210D5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C41754452066AF13002210D5 /* MachoHandle.h in Headers */,
-				C41754462066AF13002210D5 /* MachoModel.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		C41754202066AE9C002210D5 /* MachoHandle-dynamic */ = {
+		C4643E9321B5207E0092273D /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C41754292066AE9C002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle-dynamic" */;
+			buildConfigurationList = C4643EA421B5207F0092273D /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
-				C417541C2066AE9C002210D5 /* Sources */,
-				C417541D2066AE9C002210D5 /* Frameworks */,
-				C417541E2066AE9C002210D5 /* Headers */,
-				C417541F2066AE9C002210D5 /* Resources */,
+				6DEA55EC665AE351AB3540DE /* [CP] Check Pods Manifest.lock */,
+				C4643E9021B5207E0092273D /* Sources */,
+				C4643E9121B5207E0092273D /* Frameworks */,
+				C4643E9221B5207E0092273D /* Resources */,
+				778D8D2EE72E13F364DC0BFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "MachoHandle-dynamic";
-			productName = MachoHandle;
-			productReference = C41754212066AE9C002210D5 /* MachoHandle.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C41754382066AEFA002210D5 /* MachoHandle-static */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C417543E2066AEFA002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle-static" */;
-			buildPhases = (
-				C41754342066AEFA002210D5 /* Sources */,
-				C41754352066AEFA002210D5 /* Frameworks */,
-				C41754362066AEFA002210D5 /* Headers */,
-				C41754372066AEFA002210D5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MachoHandle-static";
-			productName = "MachoHandle-static";
-			productReference = C41754392066AEFA002210D5 /* MachoHandle.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C417544A2066AF30002210D5 /* Demo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C417544F2066AF30002210D5 /* Build configuration list for PBXNativeTarget "Demo" */;
-			buildPhases = (
-				C41754472066AF30002210D5 /* Sources */,
-				C41754482066AF30002210D5 /* Frameworks */,
-				C41754492066AF30002210D5 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C41754532066AF78002210D5 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
-			productReference = C417544B2066AF30002210D5 /* Demo */;
-			productType = "com.apple.product-type.tool";
+			productReference = C4643E9421B5207E0092273D /* Demo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,16 +125,8 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = com.sz.jerry;
 				TargetAttributes = {
-					C41754202066AE9C002210D5 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					C41754382066AEFA002210D5 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					C417544A2066AF30002210D5 = {
-						CreatedOnToolsVersion = 9.1;
+					C4643E9321B5207E0092273D = {
+						CreatedOnToolsVersion = 10.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -233,28 +137,20 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C41754172066AE9C002210D5;
 			productRefGroup = C41754222066AE9C002210D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C41754202066AE9C002210D5 /* MachoHandle-dynamic */,
-				C41754382066AEFA002210D5 /* MachoHandle-static */,
-				C417544A2066AF30002210D5 /* Demo */,
+				C4643E9321B5207E0092273D /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C417541F2066AE9C002210D5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C41754372066AEFA002210D5 /* Resources */ = {
+		C4643E9221B5207E0092273D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,42 +159,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DEA55EC665AE351AB3540DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		778D8D2EE72E13F364DC0BFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MachoHandle/MachoHandle.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MachoHandle.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		C417541C2066AE9C002210D5 /* Sources */ = {
+		C4643E9021B5207E0092273D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41754332066AEC4002210D5 /* MachoHandle.m in Sources */,
-				C41754302066AEC4002210D5 /* MachoModel.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C41754342066AEFA002210D5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C41754422066AF09002210D5 /* MachoHandle.m in Sources */,
-				C41754442066AF09002210D5 /* MachoModel.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C41754472066AF30002210D5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C417544E2066AF30002210D5 /* main.m in Sources */,
+				C4643EA021B5207F0092273D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C41754532066AF78002210D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C41754382066AEFA002210D5 /* MachoHandle-static */;
-			targetProxy = C41754522066AF78002210D5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C41754272066AE9C002210D5 /* Debug */ = {
@@ -410,108 +319,41 @@
 			};
 			name = Release;
 		};
-		C417542A2066AE9C002210D5 /* Debug */ = {
+		C4643EA221B5207F0092273D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8372E41A629314FC152E8D44 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sz.jerry.MachoHandle;
-				PRODUCT_MODULE_NAME = MachoHandle;
-				PRODUCT_NAME = MachoHandle;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C417542B2066AE9C002210D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sz.jerry.MachoHandle;
-				PRODUCT_MODULE_NAME = MachoHandle;
-				PRODUCT_NAME = MachoHandle;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C417543F2066AEFA002210D5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sz.jerry.MachoHandle-static";
-				PRODUCT_MODULE_NAME = MachoHandle;
-				PRODUCT_NAME = MachoHandle;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C41754402066AEFA002210D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sz.jerry.MachoHandle-static";
-				PRODUCT_MODULE_NAME = MachoHandle;
-				PRODUCT_NAME = MachoHandle;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C41754502066AF30002210D5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.machoHandle.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		C41754512066AF30002210D5 /* Release */ = {
+		C4643EA321B5207F0092273D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD0D938883ADA07B5588FD2C /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.machoHandle.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -528,29 +370,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C41754292066AE9C002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle-dynamic" */ = {
+		C4643EA421B5207F0092273D /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C417542A2066AE9C002210D5 /* Debug */,
-				C417542B2066AE9C002210D5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C417543E2066AEFA002210D5 /* Build configuration list for PBXNativeTarget "MachoHandle-static" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C417543F2066AEFA002210D5 /* Debug */,
-				C41754402066AEFA002210D5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C417544F2066AF30002210D5 /* Build configuration list for PBXNativeTarget "Demo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C41754502066AF30002210D5 /* Debug */,
-				C41754512066AF30002210D5 /* Release */,
+				C4643EA221B5207F0092273D /* Debug */,
+				C4643EA321B5207F0092273D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,16 @@
+PODS:
+  - MachoHandle (0.1)
+
+DEPENDENCIES:
+  - MachoHandle (from `./`)
+
+EXTERNAL SOURCES:
+  MachoHandle:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  MachoHandle: e5185fe5d3b93beddc5b8562f7d09ca672123dbf
+
+PODFILE CHECKSUM: 548d59b160524ceac54e0e618e985eaa1f12f317
+
+COCOAPODS: 1.5.3

@@ -2,13 +2,12 @@
 //  main.m
 //  Demo
 //
-//  Created by jerry on 2018/3/24.
+//  Created by 刘杰 on 2018/12/3.
 //  Copyright © 2018年 com.sz.jerry. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "MachoHandle.h"
-
+#import <Cocoa/Cocoa.h>
+@import MachoHandle;
 void listLinkedDylibs(MachoHandle * machoHandler){
     NSArray * archs = [machoHandler getFatArchs];
     if (archs.count > 0) {
@@ -40,6 +39,7 @@ void removeDylibLink(MachoHandle * machoHandler, NSString * link){
 
 int main(int argc, const char * argv[]) {
     NSString * binaryPath = @"set a mach-o file path here";
+    assert([NSFileManager.defaultManager fileExistsAtPath:binaryPath]);
     MachoHandle * machoHandler = [[MachoHandle alloc]initWithMachoPath:binaryPath];
     NSLog(@"original");
     //print shared libraries used (like command 'otool -L')
@@ -53,6 +53,5 @@ int main(int argc, const char * argv[]) {
     listLinkedDylibs(machoHandler);
     return 0;
 }
-
 
 
