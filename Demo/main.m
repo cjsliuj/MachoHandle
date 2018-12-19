@@ -38,7 +38,7 @@ void removeDylibLink(MachoHandle * machoHandler, NSString * link){
 }
 
 int main(int argc, const char * argv[]) {
-    NSString * binaryPath = @"set a mach-o file path here";
+    NSString * binaryPath = @"/Users/jerry/Desktop/518娱乐-121416/Payload/GloryProject-mobile.app/GloryProject-mobile";
     assert([NSFileManager.defaultManager fileExistsAtPath:binaryPath]);
     MachoHandle * machoHandler = [[MachoHandle alloc]initWithMachoPath:binaryPath];
     NSLog(@"original");

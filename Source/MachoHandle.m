@@ -187,7 +187,8 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
     long magic = [self _readMagicWithOffset:machheader.offset];
     BOOL shouldSwap = [MachoHandle _shouldSwapBytesOfMagic:magic];
     
-    NSArray<LoadCommand *> *lcmds = [self getLoadCommandsInFatArch:fatArch loadCommandType:LC_LOAD_DYLIB];
+    NSMutableArray<LoadCommand *> *lcmds = [self getLoadCommandsInFatArch:fatArch loadCommandType:LC_LOAD_DYLIB].mutableCopy;
+    [lcmds addObjectsFromArray:[self getLoadCommandsInFatArch:fatArch loadCommandType:LC_LOAD_UPWARD_DYLIB]];
     for (LoadCommand * cmd in lcmds){
         struct dylib_command * dylib = loadBytes(_machoFileHandle, cmd.offset, sizeof(struct dylib_command));
         if (shouldSwap) {

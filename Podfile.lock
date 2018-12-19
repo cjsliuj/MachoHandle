@@ -1,5 +1,5 @@
 PODS:
-  - MachoHandle (0.1)
+  - MachoHandle (0.2)
 
 DEPENDENCIES:
   - MachoHandle (from `./`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  MachoHandle: e5185fe5d3b93beddc5b8562f7d09ca672123dbf
+  MachoHandle: e73981ee149041c070d22747a03f470330351273
 
 PODFILE CHECKSUM: 548d59b160524ceac54e0e618e985eaa1f12f317
 

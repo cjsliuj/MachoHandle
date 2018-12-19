@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MachoHandle"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "MachoHandle"
   s.homepage     = "https://github.com/cjsliuj/MachoHandle"
   s.license      = "MIT"
