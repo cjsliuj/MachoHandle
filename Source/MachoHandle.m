@@ -278,8 +278,8 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
      Through the insert and delete operation, as if using 0 replace dylib_command bytes.
      */
     int n = toDelDc.dylibCmd->cmdsize;
-    uint8 *arr;
-    arr = (uint8*)malloc(sizeof(uint8)*n);
+    uint8_t *arr;
+    arr = (uint8_t*)malloc(sizeof(uint8_t)*n);
     for (int i = 0; i < n; i++)
         arr[i] = 0;
     insert(_machoPath,[NSData dataWithBytes:arr length:n], headerOffset + headerSize + originNcmdSize);

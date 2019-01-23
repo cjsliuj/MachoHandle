@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 @import MachoHandle;
+
 void listLinkedDylibs(MachoHandle * machoHandler){
     NSArray * archs = [machoHandler getFatArchs];
     if (archs.count > 0) {
