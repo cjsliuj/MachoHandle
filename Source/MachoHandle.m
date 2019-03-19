@@ -336,7 +336,12 @@ void * loadBytes(NSFileHandle * file ,long offset, int size) {
     return magic == MH_CIGAM || magic == MH_CIGAM_64 || magic == FAT_CIGAM;
 }
 + (BOOL) _isValidMachoOfMagic:(long)magic{
-    return magic == FAT_MAGIC || magic == FAT_CIGAM || magic == MH_MAGIC_64 || magic == MH_CIGAM_64;
+    return magic == FAT_MAGIC
+    || magic == FAT_CIGAM
+    || magic == MH_MAGIC_64
+    || magic == MH_MAGIC
+    || magic == MH_CIGAM
+    || magic == MH_CIGAM_64;
 }
 - (void)dealloc{
     [_machoFileHandle closeFile];
